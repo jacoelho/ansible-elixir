@@ -15,8 +15,10 @@ Vagrant.configure(2) do |config|
   end
 
   config.vm.provision :shell, :inline => <<-END
-    curl -sL https://github.com/sstephenson/bats/archive/v0.4.0.tar.gz | tar xz
-    /home/vagrant/bats-0.4.0/install.sh /usr/local
+    apt-get install -qq -y software-properties-common
+    add-apt-repository ppa:duggan/bats --yes
+    apt-get update -qq
+    apt-get install -qq -y bats
     /vagrant/tests/check.bats
   END
 end
