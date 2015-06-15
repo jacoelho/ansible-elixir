@@ -12,7 +12,7 @@ install:
   - echo -e "[travis]\nlocalhost"  >> inventory
 
 before_script:
-  - "git clone -b ${TRAVIS_BRANCH} https://github.com/jacoelho/ansible-elixir.git jacoelho.elixir"
+  - "git clone -b ${TRAVIS_BRANCH} https://github.com/jacoelho/ansible-elixir.git ../jacoelho.elixir"
 
 script:
   # Check the role/playbook's syntax.
