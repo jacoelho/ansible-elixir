@@ -20,3 +20,4 @@ Vagrant.configure(2) do |config|
     /vagrant/tests/check.bats
   END
 end
+
