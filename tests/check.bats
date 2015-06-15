@@ -1,7 +1,11 @@
 #!/usr/bin/env bats
 
 @test "elixir bin exists and is in the PATH" {
-  which elixir
+  command -v elixir
+}
+
+@test "iex bin exists and is in the PATH" {
+  command -v iex
 }
 
 @test "check elixir version" {
@@ -14,6 +18,3 @@
   [ "$result" = "4" ]
 }
 
-@test "iex bin exists and is in the PATH" {
-  which iex
-}
