@@ -4,9 +4,9 @@ language: python
 python: "2.7"
 
 before_install:
-  - sudo add-apt-repository ppa:duggan/bats
+- sudo add-apt-repository ppa:duggan/bats --yes
   - sudo apt-get update -qq
-  - sudo apt-get install -y bats
+  - sudo apt-get install -qq bats
 
 install:
   # Install Ansible.
