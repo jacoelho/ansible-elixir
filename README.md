@@ -7,3 +7,5 @@
   roles:
     - jacoelho.elixir
 ```
+
+[![Build Status](https://travis-ci.org/jacoelho/ansible-elixir.svg?branch=master)](https://travis-ci.org/jacoelho/ansible-elixir)
