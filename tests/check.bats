@@ -10,7 +10,7 @@
 
 @test "check elixir version" {
   result="$(elixir -v)"
-  [ "$result" = "Elixir 1.0.4" ]
+  [ "$result" = "Elixir 1.0.5" ]
 }
 
 @test "simple elixir command test" {
