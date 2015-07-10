@@ -12,7 +12,7 @@
 
 - name: Erlang | Install
   apt:
-    name: "erlang-nox=1:{{ elixir_erlang_version }}*"
+    name: "erlang-base=1:{{ elixir_erlang_version }}*"
     install_recommends: no
     update_cache: yes
     cache_valid_time: 3600
