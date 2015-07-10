@@ -1,1 +1,4 @@
 ---
+
+elixir_erlang_version: "18"
+elixir_version: "1.0.5"
