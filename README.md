@@ -3,9 +3,9 @@
 [Ansible](http://www.ansible.com/) role: install erlang and elixir from the erlang repositories
 
 ### Usage
-````
+```yaml
   roles:
-    - jacoelho.elixir
+    - role: jacoelho.elixir
 ```
 
 ### Configuration
