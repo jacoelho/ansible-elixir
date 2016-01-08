@@ -9,8 +9,8 @@
 }
 
 @test "check elixir version" {
-  result="$(elixir -v)"
-  [ "$result" = "Elixir 1.2" ]
+  result="$(elixir -v| tail -n 1)"
+  [ "$result" = "Elixir 1.2.0" ]
 }
 
 @test "simple elixir command test" {
